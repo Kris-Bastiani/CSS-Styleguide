@@ -124,14 +124,15 @@ module.exports = {
 		'value-list-max-empty-lines': 0,
 		'value-no-vendor-prefix': true,
 		'order/order': [
+			{ type: 'at-rule', name: 'import' },
 			'custom-properties',
 			'dollar-variables',
 			'at-variables',
 			{ type: 'at-rule', hasBlock: false },
-			'less-mixins',
+			{ type: 'at-rule', name: 'mixin' },
 			'declarations',
 			'rules',
-			{ type: 'at-rule', hasBlock: true },
+			{ type: 'at-rule', name: 'return' },
 		],
 		'order/properties-order': [
 			[
